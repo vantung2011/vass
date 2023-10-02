@@ -1,0 +1,6 @@
+RewriteEngine On
+# RewriteRule ^product$ index.php?module=products // Cách cũ 
+# RewriteRule ^product/detail/(.+)$ index.php?module=product&action=detail&id=$1
+RewriteRule ^(.+)$ index.php/$1
+
+

@@ -1,0 +1,17 @@
+# Rewire URL
+- Viết lại đường dẫn url theo ý mình
+- Đường dẫn ảo <=> ánh xạ đến đường dẫn thật
+- Phụ thuộc vào webServer
+# Rewire với Apache
+ Server phải được enable mod_rewrite
+ - Htaccess: Giống 1 lớp bảo vệ folder => tất cả request đều do htaccess kiểm soát
+ - Ánh xạ request vào file index.php
+ Vd localhost/product <=> localhost/index.php?module=product
+ Sử dụng htaccess
+ - Enable Rewrite với folder cần rewrite: 'RewriteEngine On'
+ -  Khai báo đường dẫn thật và đường dẫn thông qua 'RewriteRules duong-dan-ao duong-dan-that'
+ 
+
+
+
+
